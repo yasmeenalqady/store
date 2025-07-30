@@ -1,0 +1,554 @@
+
+ 
+    <!-- <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> -->
+
+ 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+   <link rel="stylesheet" href="./src/output.css">
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+
+</head>
+<body style="font-family: 'Poppins', sans-serif;" class="bg-white">
+
+  <!-- Navigation -->
+  <main class="bg-cover bg-center w-full h-screen" style="background-image: url('./image/background.png');">
+
+  <!-- Header -->
+ <header id="main-header" class="fixed top-0 left-0 w-full z-50 bg-transparent transition-all duration-300 ease-in-out px-6 py-4 flex justify-between items-center">
+
+    <h1 class="text-xl font-bold text-black">Your Name</h1>
+
+    <!-- Hamburger Icon -->
+  <div id="menu-btn" class="px-2 py-1 text-white bg-orange-600 rounded hover:bg-orange-500 transition cursor-pointer text-3xl md:hidden flex items-center justify-center">
+  &#9776;
+</div>
+
+
+    <!-- Nav Links -->
+<nav id="menu" class="hidden md:flex space-x-6 items-center">
+  <a href="#" class="px-4 py-2 text-white bg-orange-600 rounded hover:bg-orange-500 transition">Home</a>
+  <a href="#" class="text-black hover:text-orange-500 transition">News</a>
+  <a href="#" class="text-black hover:text-orange-500 transition">Info</a>
+  <a href="#" class="text-black hover:text-orange-500 transition">About us</a>
+  <a href="#" class="text-black hover:text-orange-500 transition">Account</a>
+</nav>
+
+
+  </header>
+
+  <!-- Mobile Menu -->
+  <nav id="mobile-menu" class="md:hidden hidden flex-col px-6 py-4 bg-white shadow-md space-y-3 mt-20">
+    <a href="#" class="block text-orange-600 font-semibold">Home</a>
+    <a href="#" class="block text-black-700">News</a>
+    <a href="#" class="block text-black-700">Info</a>
+    <a href="#" class="block text-black-700">About us</a>
+    <a href="#" class="block text-black-700">Account</a>
+  </nav>
+
+  <!-- Main Section -->
+  <section class="grid grid-cols-1 md:grid-cols-2  px-10 py-16 text-black">
+    <!-- Left Text -->
+    <div class="space-y-6 md:ml-15  md:mt-20 order-2 md:order-1">
+      <h2 class="text-4xl md:text-5xl font-bold">Lorem Ipsum</h2>
+      <p class="leading-relaxed max-w-md text-black/90">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis illum blanditiis consequuntur, vitae minima, id commodi in tempore assumenda, doloremque sint reprehenderit optio dolores illo necessitatibus aut adipisci neque excepturi.
+      </p>
+      <div class="flex gap-6 items-center">
+        <a href="#" class="bg-gradient-to-r from-orange-400 to-orange-500 text-white px-6 py-2 rounded-md transition hover:scale-105 hover:from-orange-500 hover:to-orange-600">Learn more</a>
+        <a href="#" class="text-black underline hover:text-orange-400 transition">More details</a>
+      </div>
+
+      <!-- Dots -->
+      <div class="flex gap-3 pt-4">
+        <span class="w-3 h-3 bg-teal-300 rounded-full"></span>
+        <span class="w-3 h-3 bg-orange-400 rounded-full"></span>
+        <span class="w-3 h-3 bg-teal-200 rounded-full"></span>
+      </div>
+    </div>
+
+    <!-- Right Image -->
+    <div class="mt-10 md:mt-0 flex justify-center order-1 md:order-2">
+      <img src="./image/1753529928366.png"
+           alt="Shopping Illustration"
+           class="max-w-2xl w-full animate-float md:mt-30   transition-transform hover:scale-105 duration-500">
+    </div>
+  </section>
+</main>
+
+
+<!-- تضمين أيقونات Boxicons -->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<section class="px-4 py-16">
+  <h2 class="text-3xl font-bold text-center mb-10 text-gray-800">Featured Products</h2>
+
+  <div class="max-w-7xl mx-auto">
+
+    <!-- السلايدر -->
+    <div id="slider" class="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory px-2 scrollbar-hide">
+
+      <!-- بطاقة منتج 1 -->
+      <div
+        class="product-card min-w-[300px] max-w-sm bg-white p-6 rounded-lg border-2 border-orange-400 shadow-xl hover:shadow-2xl transition-shadow duration-300 flex flex-col snap-start cursor-pointer"
+        data-name="Shopping Bag A"
+        data-manufacturer="Eco Bags Co."
+        data-description="Eco-friendly shopping bag in a variety of styles."
+        data-price="$19.99"
+        data-coupons="10% off"
+        data-image="./image/lab1.webp"
+        data-rating="4.5"
+      >
+        <img src="./image/lab1.webp" alt="Shopping Bag D"
+        class="w-full h-auto rounded hover:scale-105 transition-transform duration-500" />
+        <h3 class="text-xl font-semibold text-gray-800 mt-4">Shopping Bag A</h3>
+        <p class="text-gray-600">Eco-friendly shopping bag in a variety of styles.</p>
+        <div class="rating flex items-center gap-1 text-yellow-500 text-lg select-none mt-2"></div>
+        <div class="flex justify-between items-center mt-auto pt-4">
+          <span class="text-lg font-bold text-orange-500 price">$19.99</span>
+          <button
+            class="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600 transition"
+          >Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- بطاقة منتج 2 -->
+      <div
+        class="product-card min-w-[300px] max-w-sm bg-white p-6 rounded-lg border-2 border-orange-400 shadow-xl hover:shadow-2xl transition-shadow duration-300 flex flex-col snap-start cursor-pointer"
+        data-name="Shopping Bag B"
+        data-manufacturer="Fashion Co."
+        data-description="Durable and fashionable for daily use."
+        data-price="$16.99"
+        data-coupons=""
+        data-image="./image/lab2.webp"
+        data-rating="4"
+      >
+        <img src="./image/lab2.webp" alt="Shopping Bag D"
+       class="w-full h-auto rounded hover:scale-105 transition-transform duration-500" />
+        <h3 class="text-xl font-semibold text-gray-800 mt-4">Shopping Bag B</h3>
+        <p class="text-gray-600">Durable and fashionable for daily use.</p>
+        <div class="rating flex items-center gap-1 text-yellow-500 text-lg select-none mt-2"></div>
+        <div class="flex justify-between items-center mt-auto pt-4">
+          <span class="text-lg font-bold text-orange-500 price">$16.99</span>
+          <button
+            class="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600 transition"
+          >Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- بطاقة منتج 3 -->
+      <div
+        class="product-card min-w-[300px] max-w-sm bg-white p-6 rounded-lg border-2 border-orange-400 shadow-xl hover:shadow-2xl transition-shadow duration-300 flex flex-col snap-start cursor-pointer"
+        data-name="Shopping Bag C"
+        data-manufacturer="Minimalist Inc."
+        data-description="Minimalist and lightweight design."
+        data-price="$12.49"
+        data-coupons="Free shipping"
+        data-image="./image/lab4.webp"
+        data-rating="3"
+      >
+        <img src="./image/lab4.webp" alt="Shopping Bag D"
+        class="w-full h-auto rounded hover:scale-105 transition-transform duration-500" />
+        <h3 class="text-xl font-semibold text-gray-800 mt-4">Shopping Bag C</h3>
+        <p class="text-gray-600">Minimalist and lightweight design.</p>
+        <div class="rating flex items-center gap-1 text-yellow-500 text-lg select-none mt-2"></div>
+        <div class="flex justify-between items-center mt-auto pt-4">
+          <span class="text-lg font-bold text-orange-500 price">$12.49</span>
+          <button
+            class="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600 transition"
+          >Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- بطاقة منتج 4 -->
+      <div
+        class="product-card min-w-[300px] max-w-sm bg-white p-6 rounded-lg border-2 border-orange-400 shadow-xl hover:shadow-2xl transition-shadow duration-300 flex flex-col snap-start cursor-pointer"
+        data-name="Shopping Bag D"
+        data-manufacturer="Urban Style"
+        data-description="Compact and trendy shopping bag."
+        data-price="$15.00"
+        data-coupons=""
+        data-image="./image/lab2.webp"
+        data-rating="3.5"
+      >
+        <img src="./image/lab2.webp" alt="Shopping Bag D"
+         class="w-full h-60 object-contain rounded hover:scale-105 transition-transform duration-500" />
+
+        <h3 class="text-xl font-semibold text-gray-800 mt-4">Shopping Bag D</h3>
+        <p class="text-gray-600">Compact and trendy shopping bag.</p>
+        <div class="rating flex items-center gap-1 text-yellow-500 text-lg select-none mt-2"></div>
+        <div class="flex justify-between items-center mt-auto pt-4">
+          <span class="text-lg font-bold text-orange-500 price">$15.00</span>
+          <button
+            class="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600 transition"
+          >Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- بطاقة منتج 5 -->
+      <div
+        class="product-card min-w-[300px] max-w-sm bg-white p-6 rounded-lg border-2 border-orange-400 shadow-xl hover:shadow-2xl transition-shadow duration-300 flex flex-col snap-start cursor-pointer"
+        data-name="Shopping Bag E"
+        data-manufacturer="LightCo"
+        data-description="Lightweight and stylish."
+        data-price="$14.75"
+        data-coupons="5% off"
+        data-image="./image/lab1.webp"
+        data-rating="2.5"
+      >
+        <img src="./image/lab1.webp" alt="Shopping Bag D"
+       class="w-full h-auto rounded hover:scale-105 transition-transform duration-500" />
+        <h3 class="text-xl font-semibold text-gray-800 mt-4">Shopping Bag E</h3>
+        <p class="text-gray-600">Lightweight and stylish.</p>
+        <div class="rating flex items-center gap-1 text-yellow-500 text-lg select-none mt-2"></div>
+        <div class="flex justify-between items-center mt-auto pt-4">
+          <span class="text-lg font-bold text-orange-500 price">$14.75</span>
+          <button
+            class="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600 transition"
+          >Add to Cart</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- أزرار التحكم أسفل السلايدر -->
+    <div class="flex justify-center gap-4 mt-6">
+      <button
+        id="prevBtn"
+        class="w-10 h-10 rounded-full bg-orange-500 text-white flex items-center justify-center shadow hover:bg-orange-600 transition"
+      >
+        <i class="bx bx-chevron-left text-xl"></i>
+      </button>
+      <button
+        id="nextBtn"
+        class="w-10 h-10 rounded-full bg-orange-500 text-white flex items-center justify-center shadow hover:bg-orange-600 transition"
+      >
+        <i class="bx bx-chevron-right text-xl"></i>
+      </button>
+    </div>
+  </div>
+
+  <style>
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</section>
+
+<!-- النافذة المنبثقة (Modal) -->
+<div
+  id="productModal"
+  class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300 z-50 p-6"
+  tabindex="-1"
+>
+  <div
+    class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto p-8 relative shadow-3xl flex flex-col md:flex-row gap-10"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modalName"
+  >
+    <button
+      id="modalCloseBtn"
+      class="absolute top-5 right-5 text-gray-600 hover:text-gray-900 text-4xl font-extrabold leading-none transition-colors duration-300"
+      aria-label="Close modal"
+    >
+      &times;
+    </button>
+
+    <!-- صورة المنتج -->
+    <img
+      id="modalImage"
+      src=""
+      alt="Product Image"
+      class="w-full md:w-1/2 h-[400px] object-contain rounded-xl shadow-lg"
+    />
+
+    <!-- تفاصيل المنتج -->
+    <div class="flex flex-col justify-between md:w-1/2">
+      <div>
+        <h3 id="modalName" class="text-4xl font-bold mb-4 text-gray-900"></h3>
+        <p
+          id="modalManufacturer"
+          class="text-lg text-gray-500 mb-6 italic tracking-wide"
+        ></p>
+        <p id="modalDescription" class="text-gray-700 mb-8 leading-relaxed text-lg"></p>
+        <div class="flex items-center gap-6 mb-10">
+          <span
+            id="modalPrice"
+            class="text-3xl font-extrabold text-orange-600 tracking-wide"
+          ></span>
+          <span
+            id="modalCoupons"
+            class="px-4 py-2 bg-green-100 text-green-800 rounded-xl text-lg font-semibold shadow-inner"
+          ></span>
+        </div>
+      </div>
+
+      <div>
+        <label
+          for="modalRating"
+          class="block mb-3 font-semibold text-xl text-gray-800"
+          >Rate this product:</label
+        >
+        <div
+          id="modalRating"
+          class="flex gap-3 text-yellow-400 cursor-pointer select-none text-5xl"
+          role="radiogroup"
+          aria-label="Product rating"
+        ></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  // عناصر السلايدر وأزرار التحكم
+  const slider = document.getElementById('slider');
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+
+  const cardWidth = slider.children[0].offsetWidth + 24; // عرض البطاقة + الفجوة
+
+  // التمرير عند الضغط على الأزرار
+  nextBtn.addEventListener('click', () => {
+    slider.scrollBy({ left: cardWidth, behavior: 'smooth' });
+  });
+
+  prevBtn.addEventListener('click', () => {
+    slider.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+  });
+
+  // التمرير التلقائي كل 3 ثواني
+  let autoScrollInterval = setInterval(() => {
+    if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth) {
+      slider.scrollTo({ left: 0, behavior: 'smooth' });
+    } else {
+      slider.scrollBy({ left: cardWidth, behavior: 'smooth' });
+    }
+  }, 3000);
+
+  // إيقاف التمرير التلقائي عند لمس أو سحب
+  let isDragging = false;
+  let startX;
+  let scrollLeftStart;
+
+  slider.addEventListener('touchstart', (e) => {
+    isDragging = true;
+    startX = e.touches[0].pageX - slider.offsetLeft;
+    scrollLeftStart = slider.scrollLeft;
+    clearInterval(autoScrollInterval);
+  });
+
+  slider.addEventListener('touchmove', (e) => {
+    if (!isDragging) return;
+    const x = e.touches[0].pageX - slider.offsetLeft;
+    const walk = startX - x;
+    slider.scrollLeft = scrollLeftStart + walk;
+  });
+
+  slider.addEventListener('touchend', () => {
+    isDragging = false;
+    setTimeout(() => {
+      autoScrollInterval = setInterval(() => {
+        if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth) {
+          slider.scrollTo({ left: 0, behavior: 'smooth' });
+        } else {
+          slider.scrollBy({ left: cardWidth, behavior: 'smooth' });
+        }
+      }, 3000);
+    }, 3000);
+  });
+
+  // ========= دوال النجوم التفاعلية ==========
+
+  // إنشاء نجوم داخل عنصر
+  function createStars(rating, container, interactive = false) {
+    container.innerHTML = '';
+    for (let i = 1; i <= 5; i++) {
+      const star = document.createElement('i');
+      star.classList.add('bx');
+      if (i <= Math.floor(rating)) {
+        star.classList.add('bxs-star'); // نجمة كاملة
+      } else if (i === Math.ceil(rating) && rating % 1 !== 0) {
+        star.classList.add('bxs-star-half'); // نصف نجمة
+      } else {
+        star.classList.add('bx-star'); // نجمة فارغة
+      }
+      star.style.fontSize = '24px';
+
+      if (interactive) {
+        star.style.cursor = 'pointer';
+        star.setAttribute('role', 'radio');
+        star.setAttribute('aria-checked', 'false');
+        star.setAttribute('tabindex', '0');
+        star.dataset.value = i;
+        star.addEventListener('click', () => {
+          updateRating(container, i);
+        });
+        star.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            updateRating(container, i);
+          }
+        });
+      }
+
+      container.appendChild(star);
+    }
+  }
+
+  // تحديث التقييم بالنجوم في النافذة والبطاقة
+  function updateRating(container, rating) {
+    createStars(rating, container, true);
+    // تحديث بيانات البطاقة الحالية
+    currentProduct.dataset.rating = rating;
+    // تحديث النجوم في البطاقة
+    const cardRatingDiv = currentProduct.querySelector('.rating');
+    createStars(rating, cardRatingDiv, false);
+  }
+
+  // عناصر النافذة المنبثقة
+  const modal = document.getElementById('productModal');
+  const modalImage = document.getElementById('modalImage');
+  const modalName = document.getElementById('modalName');
+  const modalManufacturer = document.getElementById('modalManufacturer');
+  const modalDescription = document.getElementById('modalDescription');
+  const modalPrice = document.getElementById('modalPrice');
+  const modalCoupons = document.getElementById('modalCoupons');
+  const modalRating = document.getElementById('modalRating');
+  const modalCloseBtn = document.getElementById('modalCloseBtn');
+
+  // البطاقة المفتوحة حاليا
+  let currentProduct = null;
+
+  // تهيئة النجوم لكل بطاقة (غير تفاعلية)
+  document.querySelectorAll('.product-card').forEach((card) => {
+    const ratingValue = parseFloat(card.dataset.rating) || 0;
+    const ratingDiv = card.querySelector('.rating');
+    createStars(ratingValue, ratingDiv, false);
+
+    // فتح النافذة عند النقر
+    card.addEventListener('click', () => {
+      currentProduct = card;
+      modalImage.src = card.dataset.image;
+      modalImage.alt = card.dataset.name;
+      modalName.textContent = card.dataset.name;
+      modalManufacturer.textContent = card.dataset.manufacturer;
+      modalDescription.textContent = card.dataset.description;
+      modalPrice.textContent = card.dataset.price;
+      modalCoupons.textContent = card.dataset.coupons || '';
+      if (!card.dataset.coupons) {
+        modalCoupons.style.display = 'none';
+      } else {
+        modalCoupons.style.display = 'inline-block';
+      }
+      createStars(ratingValue, modalRating, true);
+
+      modal.classList.remove('opacity-0', 'pointer-events-none');
+      modal.focus();
+    });
+  });
+
+  // إغلاق النافذة
+  modalCloseBtn.addEventListener('click', () => {
+    modal.classList.add('opacity-0', 'pointer-events-none');
+  });
+
+  // إغلاق النافذة عند الضغط خارج المحتوى
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.classList.add('opacity-0', 'pointer-events-none');
+    }
+  });
+
+  // إغلاق النافذة عند الضغط على زر Escape
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !modal.classList.contains('opacity-0')) {
+      modal.classList.add('opacity-0', 'pointer-events-none');
+    }
+  });
+</script>
+
+
+<footer class="bg-gray-800 text-white pt-10 pb-6 mt-16">
+  <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
+    
+    <!-- Logo / Brand -->
+    <div>
+      <h3 class="text-2xl font-bold text-orange-400 mb-3">YourBrand</h3>
+      <p class="text-sm text-gray-300">We provide high-quality products that make your shopping experience enjoyable and memorable.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h4 class="text-lg font-semibold mb-3">Quick Links</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:text-orange-400 transition">Home</a></li>
+        <li><a href="#" class="hover:text-orange-400 transition">Shop</a></li>
+        <li><a href="#" class="hover:text-orange-400 transition">About Us</a></li>
+        <li><a href="#" class="hover:text-orange-400 transition">FAQ</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div>
+      <h4 class="text-lg font-semibold mb-3">Contact</h4>
+      <ul class="space-y-2 text-sm text-gray-300">
+        <li>Email: support@yourbrand.com</li>
+        <li>Phone: +1 234 567 890</li>
+        <li>Address: 123 Market St, New York, NY</li>
+      </ul>
+    </div>
+
+    <!-- Social Media -->
+    <div>
+      <h4 class="text-lg font-semibold mb-3">Follow Us</h4>
+      <div class="flex gap-4 text-2xl">
+        <a href="#" class="hover:text-orange-400 transition"><i class='bx bxl-facebook'></i></a>
+        <a href="#" class="hover:text-orange-400 transition"><i class='bx bxl-twitter'></i></a>
+        <a href="#" class="hover:text-orange-400 transition"><i class='bx bxl-instagram'></i></a>
+        <a href="#" class="hover:text-orange-400 transition"><i class='bx bxl-linkedin'></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Footer -->
+  <div class="border-t border-gray-700 mt-10 pt-4 text-center text-sm text-gray-400">
+    &copy; 2025 YourBrand. All rights reserved.
+  </div>
+</footer>
+
+
+    <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+
+    //scroll -header
+     window.addEventListener("scroll", function () {
+    const header = document.getElementById("main-header");
+    if (window.scrollY > 10) {
+      header.classList.add("shadow-md", "bg-white");
+      header.classList.remove("bg-transparent");
+    } else {
+      header.classList.remove("shadow-md", "bg-white");
+      header.classList.add("bg-transparent");
+    }
+  });
+  </script>
+
+</body>
+</html>
