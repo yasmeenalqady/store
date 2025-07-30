@@ -190,6 +190,56 @@
         </div>
       </div>
 
+
+       <div
+        class="product-card min-w-[300px] max-w-sm bg-white p-6 rounded-lg border-2 border-orange-400 shadow-xl hover:shadow-2xl transition-shadow duration-300 flex flex-col snap-start cursor-pointer"
+        data-name="Shopping Bag D"
+        data-manufacturer="Urban Style"
+        data-description="Compact and trendy shopping bag."
+        data-price="$15.00"
+        data-coupons=""
+        data-image="./image/lab2.webp"
+        data-rating="3.5"
+      >
+        <img src="./image/lab2.webp" alt="Shopping Bag D"
+         class="w-full h-60 object-contain rounded hover:scale-105 transition-transform duration-500" />
+
+        <h3 class="text-xl font-semibold text-gray-800 mt-4">Shopping Bag D</h3>
+        <p class="text-gray-600">Compact and trendy shopping bag.</p>
+        <div class="rating flex items-center gap-1 text-yellow-500 text-lg select-none mt-2"></div>
+        <div class="flex justify-between items-center mt-auto pt-4">
+          <span class="text-lg font-bold text-orange-500 price">$15.00</span>
+          <button
+            class="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600 transition"
+          >Add to Cart</button>
+        </div>
+      </div>
+
+
+       <div
+        class="product-card min-w-[300px] max-w-sm bg-white p-6 rounded-lg border-2 border-orange-400 shadow-xl hover:shadow-2xl transition-shadow duration-300 flex flex-col snap-start cursor-pointer"
+        data-name="Shopping Bag D"
+        data-manufacturer="Urban Style"
+        data-description="Compact and trendy shopping bag."
+        data-price="$15.00"
+        data-coupons=""
+        data-image="./image/lab2.webp"
+        data-rating="3.5"
+      >
+        <img src="./image/lab2.webp" alt="Shopping Bag D"
+         class="w-full h-60 object-contain rounded hover:scale-105 transition-transform duration-500" />
+
+        <h3 class="text-xl font-semibold text-gray-800 mt-4">Shopping Bag D</h3>
+        <p class="text-gray-600">Compact and trendy shopping bag.</p>
+        <div class="rating flex items-center gap-1 text-yellow-500 text-lg select-none mt-2"></div>
+        <div class="flex justify-between items-center mt-auto pt-4">
+          <span class="text-lg font-bold text-orange-500 price">$15.00</span>
+          <button
+            class="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600 transition"
+          >Add to Cart</button>
+        </div>
+      </div>
+
       <!-- بطاقة منتج 5 -->
       <div
         class="product-card min-w-[300px] max-w-sm bg-white p-6 rounded-lg border-2 border-orange-400 shadow-xl hover:shadow-2xl transition-shadow duration-300 flex flex-col snap-start cursor-pointer"
@@ -413,8 +463,7 @@
     // تحديث بيانات البطاقة الحالية
     currentProduct.dataset.rating = rating;
     // تحديث النجوم في البطاقة
-    const cardRatingDiv = currentProduct.querySelector('.rating');
-    createStars(rating, cardRatingDiv, false);
+   
   }
 
   // عناصر النافذة المنبثقة
